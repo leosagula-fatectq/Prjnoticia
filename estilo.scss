@@ -1,0 +1,79 @@
+$pcolor: #333;
+$scolor: #777;
+
+@mixin borda($tamanho){
+    border-radius: 10px;
+    border: $tamanho solid #333;
+}
+
+@mixin transform($prop){
+    -webkit-transform: $prop;
+    -ms-transform: $prop;
+    transform: $prop;
+}
+
+/* Inicio do codigo */
+
+%flex-c{
+    
+    display: flex;
+    flex-wrap: wrap;
+   
+    
+    
+}
+
+body{
+    margin:0px;
+    padding: 0;
+    color: $pcolor;
+}
+
+.container1{
+    @extend %flex-c;
+    margin: 2px;
+    display: flex;
+    
+}
+
+h2{
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    border:1px solid;
+
+}
+
+.item{
+    margin: 26px;
+    
+}
+
+.titulo2{
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.rodape{
+    background-color:#8B0000;
+   
+}
+
+.roda{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.imgrodap{
+    width: 60px;
+    height: 60px;
+    margin: 3%;
+}
+
+.imagemm{
+    margin-left: 38%;
+}
+
